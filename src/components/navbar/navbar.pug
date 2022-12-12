@@ -1,0 +1,66 @@
+include ../../blocks/section/section
+include ../../components/paragraph/paragraph
+
+
+mixin navbar(bem, data)
+  +b('navbar', bem)&attributes(attributes)
+    +e('wrapper')
+      a(href="#") 
+        +section({m: 'nav-item-wrapper.active'})
+          +e('item')
+            svg(class="navbar-man")
+              use(xlink:href='#man')
+          +paragraph({m: 'item'}) Управление
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-romb")
+              use(xlink:href='#romb')
+          +paragraph({m: 'item'}) Портфолио
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-star")
+              use(xlink:href='#star')
+          +paragraph({m: 'item'}) Награды
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-heart")
+              use(xlink:href='#heart')
+          +paragraph({m: 'item'}) Избранное
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-mex")
+              use(xlink:href='#mex')
+          +paragraph({m: 'item'}) Аккаунт
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-lines")
+              use(xlink:href='#lines')
+          +paragraph({m: 'item'}) Уровень
+      a(href="#") 
+        +section({m: 'nav-item-wrapper.premium'})
+          +e('item')
+            svg(class="navbar-crown")
+              use(xlink:href='#crown')
+          +paragraph({m: 'item'}) Премиум
+      a(href="#") 
+        +section({m: 'nav-item-wrapper'})
+          +e('item')
+            svg(class="navbar-mess")
+              use(xlink:href='#mess')
+          +paragraph({m: 'item'}) Поддержка
+    a(href="#") 
+      +section({m: 'nav-item-wrapper.last'})
+        +e('item')
+          svg(class="navbar-out")
+            use(xlink:href='#out')
+        +paragraph({m: 'item'}) Выйти
+
+
+
+
+ 

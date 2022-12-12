@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: center;
+  height: 82px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    width: 120px;
+    height: 18px;
+  }
+
+  &-bell {
+    width: 16px;
+    height: 18px;
+  }
+
+  &__img-card {
+    width: 46px;
+    height: 46px;
+  }
+
+  &__logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: -4px;
+    right: -1px;
+    background: #ef5da8;
+  }
+
+  &__admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 164px;
+  }
+}

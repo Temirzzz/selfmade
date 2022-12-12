@@ -1,0 +1,21 @@
+include ../../components/paragraph/paragraph
+
+mixin chart(bem, data)
+  +b('chart', bem)&attributes(attributes)
+    +paragraph({m: 'chart'}) Ваш SR
+    +e('spin-wrapper')
+      +e('spin', {m: 'first'})(class="pie animate no-round" style="--p:90;--c:#EF5DA8;")
+      +e('text-cloud')  
+        +paragraph({m:'cloud'}) SR ТОП
+      +e('spin', {m: 'second'})(class="pie2 animate no-round" style="--p:70;--c:#5D5FEF;")
+      +e('spin', {m: 'third'})(class="pie3 animate no-round" style="--p:100;--c:#3AC39F;")
+      +e('spin', {m: 'fourth'})(class="pie4 animate no-round" style="--p:50;--c:#F178B6;")
+      +e('spin', {m: 'fifth'})(class="pie5 animate no-round" style="--p:90;--c:#A5A6F6;")
+        +paragraph({m: 'chart-data-first'}) +10
+        +paragraph({m: 'chart-data-second'}) 935
+        +paragraph({m: 'chart-data-third'}) 17849
+    +paragraph({m: 'chart-bottom'}) 74
+      span / 
+        | 134
+
+    

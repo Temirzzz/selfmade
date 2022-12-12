@@ -1,0 +1,32 @@
+include ../../components/paragraph/paragraph
+
+mixin table(bem, data)
+  +b('table', {t: 'table'}, bem)&attributes(attributes)
+    +e('head', {t: 'thead'})
+      +e('head-row', {t: 'tr'})
+        +e('head-item', {t: 'td', m: 'main'}) Статистика с 01.12.22 по 08.12.22
+        +e('head-item', {t: 'td'}) Пользователи
+        +e('head-item', {t: 'td'}) Анонимы
+        +e('head-item', {t: 'td'}) Всего
+    +e('body', {t: 'tbody'})
+      +e('body-row', {t: 'tr'})
+        +e('body-item', {t: 'td', m: 'main'}) Уникальные визиты
+        +e('body-item', {t: 'td'}) 12
+        +e('body-item', {t: 'td'}) 33
+        +e('body-item', {t: 'td'}) 60
+      +e('body-row', {t: 'tr'})
+        +e('body-item', {t: 'td', m: 'main'}) Просмотров контактов
+        +e('body-item', {t: 'td'}) 2
+        +e('body-item', {t: 'td'}) x
+        +e('body-item', {t: 'td'}) 7
+      +e('body-row', {t: 'tr'})
+        +e('body-item', {t: 'td', m: 'main'}) Добавлений в избранное
+        +e('body-item', {t: 'td'}) 3
+        +e('body-item', {t: 'td'}) x
+        +e('body-item', {t: 'td'}) 13
+      +e('body-row', {t: 'tr'})
+        +e('body-item', {t: 'td', m: 'main'}) Просмотров портфолио
+        +e('body-item', {t: 'td'}) 22
+        +e('body-item', {t: 'td'}) 87
+        +e('body-item', {t: 'td'}) 156
+

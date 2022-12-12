@@ -1,0 +1,69 @@
+.footer {
+  height: 256px;
+  background: #5d5fef;
+
+  &__top,
+  &__middle,
+  &__bottom,
+  &__ident {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__middle {
+    margin-top: 44px;
+    p {
+      font-family: "Gilroy-Medium";
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+
+  &__ident {
+    p {
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+
+  &__ident {
+    a {
+      p {
+        color: #b6b6b6;
+      }
+    }
+  }
+
+  &__bottom {
+    align-items: center;
+    height: 78px;
+    background: #5556d3;
+    max-width: unset;
+    margin-top: 35px;
+  }
+
+  &-logo {
+    width: 137px;
+    height: 20px;
+    margin-top: 49px;
+  }
+
+  &-telega,
+  &-insta,
+  &-vk {
+    margin-right: 19px;
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 44px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

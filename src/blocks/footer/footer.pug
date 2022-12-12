@@ -1,0 +1,38 @@
+include ../../components/paragraph/paragraph
+
+mixin footer(bem, data)
+  +b('footer', bem, {t: 'footer'})&attributes(attributes)
+    +e('top')
+      a(href="#") 
+        svg(class="footer-logo")
+          use(xlink:href='#footer-logo')
+      +e('social')
+        a(href="#") 
+          svg(class="footer-telega")
+            use(xlink:href='#telega')
+        a(href="#") 
+          svg(class="footer-insta")
+            use(xlink:href='#insta')
+        a(href="#") 
+          svg(class="footer-vk")
+            use(xlink:href='#vk')
+        a(href="#") 
+          svg(class="footer-fb")
+            use(xlink:href='#fb')
+    +e('middle')
+      a(href="#") 
+        +paragraph() Как работает сервис?
+      a(href="#") 
+        +paragraph() Советы от SELFMADE
+      a(href="#") 
+        +paragraph() Пользовательское соглашение
+      a(href="#") 
+        +paragraph() Почему SELFMADE
+      a(href="#") 
+        +paragraph() Помощь и поддержка
+    +e('bottom')
+      +e('ident')
+        +paragraph() © SELFMADE.TEAM 2022
+        +paragraph() ИНН 431207720494 / ОГРНИП 320508100324371
+        a(href="#") 
+          +paragraph() Политика конфиденциальности

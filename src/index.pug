@@ -1,0 +1,33 @@
+include ../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+
+
+//- components imports
+include ./components/navbar/navbar
+include ./components/main-content/main-content
+include ./components/chart/chart
+include ./components/table/table
+
+
+
+//- blocks imports
+include ./blocks/head/head
+include ./blocks/header/header
+include ./blocks/section/section
+include ./blocks/footer/footer
+
+
+
+doctype html
+html
+  +head({title: "Главная"})
+  body.main
+    +header({}, {})
+    +section({m: 'main'})
+      +navbar()
+      +section({m: 'column'})
+        +section({m: 'sec'})
+          +main-content()
+          +chart()
+        +table()
+    +footer()

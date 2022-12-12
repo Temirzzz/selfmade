@@ -1,0 +1,137 @@
+.main-content {
+  max-width: 646px;
+  width: 100%;
+  height: 372px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 30px;
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 106px;
+    padding: 16px 28px 19px 21px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &__img-card {
+    width: 71px;
+    height: 71px;
+  }
+
+  &__lamp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+    background: #ef5da8;
+    border-radius: 47px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 26px;
+  }
+
+  &__middle {
+    height: 158px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    padding: 29px 26px 0 21px;
+  }
+
+  &-ask {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ef5da8;
+    padding-left: 6px;
+  }
+
+  &__profile-wrapper {
+    display: flex;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-right: 6px;
+  }
+
+  &__profile:last-child {
+    margin-right: 0;
+  }
+
+  &__dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &__dot:last-child {
+    margin-right: 0;
+  }
+
+  &__dot_purple {
+    background: #a5a6f6;
+  }
+  &__dot_pink {
+    background: #f178b6;
+  }
+  &__dot_green {
+    background: #3ac49f;
+  }
+  &__dot_blue {
+    background: #5d5fef;
+  }
+  &__dot_red {
+    background: #ef5da8;
+  }
+
+  &__bottom {
+    padding: 22px 34px 33px 21px;
+  }
+
+  &__disk-wrapper {
+    display: flex;
+  }
+
+  &__loader-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15px;
+    width: 100%;
+    max-width: 398px;
+    background: #c7c8ff;
+    border-radius: 63px;
+    font-family: "Gilroy-Bold";
+    font-size: 12px;
+    line-height: 14px;
+    color: #5d5fef;
+    padding-right: 20px;
+  }
+
+  &__loader {
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    max-width: 238px;
+    background: #5d5fef;
+    border-radius: 63px;
+    left: 0;
+  }
+}

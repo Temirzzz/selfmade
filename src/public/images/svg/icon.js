@@ -1,0 +1,16 @@
+import "../svg/logo.svg";
+import "../svg/bell.svg";
+import "../svg/romb.svg";
+import "../svg/man.svg";
+import "../svg/star.svg";
+import "../svg/heart.svg";
+import "../svg/mex.svg";
+import "../svg/lines.svg";
+import "../svg/crown.svg";
+import "../svg/mess.svg";
+import "../svg/out.svg";
+import "../svg/footer-logo.svg";
+import "../svg/vk.svg";
+import "../svg/fb.svg";
+import "../svg/telega.svg";
+import "../svg/insta.svg";

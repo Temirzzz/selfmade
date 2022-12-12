@@ -1,0 +1,41 @@
+.button {
+  $self: &;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &_sidebar {
+    justify-content: flex-start;
+    width: 190px;
+    height: 60px;
+    background: #e5ecee;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    #{$self}__link {
+      padding-left: 16px;
+      font-family: "Nunito-Bold";
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(0, 61, 84, 0.8);
+    }
+  }
+
+  &_sidebar:hover {
+    border: 1px solid #d42b33;
+    background: #fefefe;
+  }
+
+  &_sidebar:active {
+    background: #d42b33;
+    #{$self}__link {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &_sidebar:last-child {
+    margin-bottom: 0;
+  }
+}

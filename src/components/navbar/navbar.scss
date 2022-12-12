@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  min-width: 234px;
+  max-height: 574px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 30px;
+
+  &__wrapper {
+    padding: 16px 17px 14px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &-man {
+    width: 16px;
+    height: 18px;
+  }
+  &-romb {
+    width: 21px;
+    height: 21px;
+  }
+}

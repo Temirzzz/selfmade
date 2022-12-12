@@ -1,0 +1,247 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 372px;
+  background: #f0f0f0;
+  border-radius: 15px;
+
+  &__spin-wrapper {
+    position: relative;
+    top: -11px;
+  }
+
+  &__text-cloud {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 32px;
+    bottom: -96px;
+    left: -45px;
+    background: #383838;
+    font-size: 8px;
+    line-height: 11%;
+    color: #ffffff;
+    z-index: 999;
+    border-radius: 3px;
+    display: none;
+  }
+
+  &__text-cloud::after {
+    content: "";
+    display: inline-block;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #383838;
+    position: absolute;
+    top: 20px;
+  }
+
+  &__spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &__spin_first:hover ~ &__text-cloud {
+    display: flex;
+  }
+
+  &__spin_fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 20;
+  --b: 11px;
+  --c: darkred;
+  --w: 230px;
+  width: var(--w);
+  aspect-ratio: 1;
+}
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.pie2 {
+  --p: 20;
+  --b: 11px;
+  --c: darkred;
+  --w: 197px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+}
+.pie2:before,
+.pie2:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie2:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie2:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.pie3 {
+  --p: 20;
+  --b: 11px;
+  --c: darkred;
+  --w: 165px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+}
+.pie3:before,
+.pie3:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie3:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie3:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.pie4 {
+  --p: 20;
+  --b: 11px;
+  --c: darkred;
+  --w: 132px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+}
+.pie4:before,
+.pie4:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie4:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie4:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.pie5 {
+  --p: 20;
+  --b: 11px;
+  --c: darkred;
+  --w: 100px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+}
+.pie5:before,
+.pie5:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie5:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie5:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.animate {
+  animation: p 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 1 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}

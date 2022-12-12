@@ -1,0 +1,22 @@
+include ../../components/paragraph/paragraph
+
+mixin header(bem, data)
+  +b('header', {})&attributes(attributes)
+    +e('wrapper')
+      +e('logo-block')
+        a(href="#") 
+          svg(class="header-logo")
+            use(xlink:href='#logo')
+      +e('admin')
+        +e('logo-wrapper')
+          +e('dot')
+          svg(class="header-bell")
+            use(xlink:href='#bell')
+        +paragraph({m: 'name'}) Аракелян Д.
+        +e('img-card', {t: 'img' })(src=`/src/public/images/avatar.png` alt='avatar')
+      
+
+          
+
+   
+

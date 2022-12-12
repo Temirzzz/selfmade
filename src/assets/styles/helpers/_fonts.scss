@@ -1,0 +1,13 @@
+@mixin webFont($family, $file, $weight: normal, $style: normal, $path: "../fonts/") {
+  @font-face {
+    font-family: $family;
+    src: url($path + $file + ".ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-stretch: normal;
+  }
+}
+
+@include webFont("Gilroy-Regular", "Gilroy-Regular", 400);
+@include webFont("Gilroy-Medium", "Gilroy-Medium", 500);
+@include webFont("Gilroy-Bold", "Gilroy-Bold", 600);

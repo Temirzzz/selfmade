@@ -1,0 +1,40 @@
+include ../../components/paragraph/paragraph
+
+
+mixin main-content(bem, data)
+  +b('main-content', bem)&attributes(attributes)
+    +e('top')
+      +e('avatar')
+        +e('img-card', {t: 'img' })(src=`/src/public/images/avatart-big.png` alt='avatart-big')
+        +paragraph({m: 'main-content-top'}) Давид Аракелян 
+      +e("lamp") топ
+    +e('middle')
+      +paragraph({m: 'main-content-middle'}) SELFMADE RESPECT (SR)
+        span.main-content-ask (Что это?)
+      +e('profile-wrapper')
+        +e('profile')
+          +e('dot', {m: 'purple'})
+          +paragraph({m: 'profile-item'}) Профиль
+        +e('profile')
+          +e('dot', {m: 'pink'})
+          +paragraph({m: 'profile-item'}) Портфолио
+        +e('profile')
+          +e('dot', {m: 'green'})
+          +paragraph({m: 'profile-item'}) SR ФРЕШ
+        +e('profile')
+          +e('dot', {m: 'blue'})
+          +paragraph({m: 'profile-item'}) SR ПРО
+        +e('profile')
+          +e('dot', {m: 'red'})
+          +paragraph({m: 'profile-item'}) SR ТОП
+    +e('bottom')
+      +paragraph({m: 'main-content-bottom'}) Мой диск
+      +e('disk-wrapper')  
+        +paragraph({m: 'disk-wrapper-gray'}) Осталось 
+        +paragraph({m: 'main-content-black'}) 40 
+          span / 
+            | 100
+          span 
+            | (mb)
+        +e('loader-wrapper') Добавить место
+          +e('loader') 
